@@ -24,7 +24,7 @@
         
         <style>
           .social-icons {
-  scale: 2;
+  scale: 1.3;
   margin-top: 1rem;
   transition: color 0.3s ease;
   cursor: pointer;
