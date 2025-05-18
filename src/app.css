@@ -1,0 +1,240 @@
+@import url("https://p.typekit.net/p.css?s=1&k=onl6khw&ht=tk&f=10294.10295.10296.10297&a=28982114&app=typekit&e=css");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Variables */
+:root {
+  --ff: "brandon-grotesque", sans-serif;
+  --colorprimary: #000000;
+  --colorsecondary: #ffffff;
+  --coloraccent: #bca97f;
+  --h1: bold 50px/72px var(--ff);
+  --h2: 800 30px/72px var(--ff);
+  --p: 200 18px/30px var(--ff);
+  --spacing1: 4px;
+  --spacing2: 8px;
+  --spacing3: 16px;
+  --spacing4: 20px;
+  --spacing5: 40px;
+  --spacing6: 80px;
+  --spacing7: 160px;
+}
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--colorprimary);
+  color: var(--colorsecondary);
+  text-wrap: balance;
+  width: 100%;
+}
+
+/* Typography */
+
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+  margin: var(--spacing2) 0;
+}
+p {
+  font: var(--p);
+  margin: var(--spacing2) 0;
+}
+
+a {
+  font: var(--pp);
+  color: var(--colorsecondary);
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+nav a:hover {
+  color: var(--coloraccent);
+  cursor: pointer;
+}
+
+.name:hover {
+  color: var(--coloraccent);
+  cursor: pointer;
+}
+a.name {
+  font: var(--h2);
+  letter-spacing: 0.2rem;
+}
+
+/* Media Styles */
+img {
+  width: 100%;
+  height: 62.5vh;
+  display: block;
+  opacity: 0.75;
+  aspect-ratio: 16 / 9;
+  object-position: center center;
+}
+
+video {
+  display: block;
+  height: 62.5vh;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.75;
+  margin-bottom: 1px;
+  aspect-ratio: 16 / 9;
+  object-position: center center;
+}
+
+/* Button Styles */
+.button {
+  all: unset;
+  display: inline-block;
+  margin: var(--spacing2) 0;
+  background: var(--coloraccent);
+  padding: var(--spacing3) var(--spacing4);
+  color: var(--colorsecondary);
+  border-radius: var(--spacing7);
+  border-bottom: solid var(--spacing1) var(--coloraccent);
+  font: var(--pp);
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.btn:hover,
+.button:hover {
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: var(--h1);
+  color: var(--colorsecondary);
+  transition: 0.5s ease;
+  opacity: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+}
+
+.overlay:hover {
+  background: #000000aa;
+  opacity: 1;
+}
+
+.social-icons {
+  scale: 2;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.social-icons a:hover {
+  color: var(--coloraccent) !important;
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+
+/* Utility Styles */
+
+section {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.center {
+  text-align: center;
+}
+.hidden {
+  display: none;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 2px;
+}
+.flex > div {
+  flex: 1 1 50%; /* Two columns side by side */
+  position: relative;
+  width: 100%;
+  height: 62.5vh; /* adjust as needed */
+}
+
+@media screen and (max-width: 800px) {
+  .flex > div video,
+  .flex > div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* Media query for screen < 800px */
+  @media (max-width: 800px) {
+    .flex > div {
+      flex: 1 1 100%; /* Each item takes full width */
+      height: 62.5rem; /* Optional, let content define height */
+    }
+  }
+}
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* Allow wrap on smaller screens */
+  justify-content: space-between;
+  gap: 2rem; /* Reduce gap so they don’t overflow */
+  padding: var(--spacing6);
+}
+
+.flex2 > div {
+  display: flex;
+  flex-direction: column;
+}
+.flex2 > div p {
+  margin: 0rem 0; /* small vertical margin */
+}
+
+.flex3 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; /* Allow wrap on smaller screens */
+  text-align: center;
+  justify-content: space-between;
+  padding: var(--spacing6);
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+.padding1 {
+  padding: var (--spacing1);
+}
+.padding2 {
+  padding: var (--spacing2);
+}
+.padding3 {
+  padding: var (--spacing3);
+}
+.padding4 {
+  padding: var (--spacing4);
+}
+.padding5 {
+  padding: var (--spacing5);
+}
+.padding6 {
+  padding: var (--spacing6);
+}
+.padding7 {
+  padding: var (--spacing7);
+}
