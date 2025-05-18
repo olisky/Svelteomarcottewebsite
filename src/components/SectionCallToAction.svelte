@@ -16,4 +16,23 @@
          <div class="social-icons">
         <a href="{url}" class="{icon}"></a>
         <a href="{url2}" class="{icon2}"></a>
+         </div>
+         </div>
         </section>
+
+
+        
+        <style>
+          .social-icons {
+  scale: 2;
+  margin-top: 1rem;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+.social-icons a:hover {
+  color: var(--coloraccent) !important;
+  transform: scale(1.3);
+  transition: 0.3s ease-in-out;
+}
+        </style>
+        
