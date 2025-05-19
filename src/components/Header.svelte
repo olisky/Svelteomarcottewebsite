@@ -55,7 +55,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 2rem;
+  padding: 40px 100px;
 
 }
 

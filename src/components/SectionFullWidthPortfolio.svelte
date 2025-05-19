@@ -1,6 +1,7 @@
 <script>
     export let project;
     export let link;
+    export let href; // New prop for the URL
 
       // Simple function to detect if link is a video (check extension)
   const isVideo = () => {
@@ -8,9 +9,9 @@
   };
 </script>
 
-<section id="projects" class="flex">
+<section>
   <div>
-      <a href="{project}">
+      <a href={href}>
       {#if isVideo()}
         <video src={link} autoplay muted loop></video>
          {:else}

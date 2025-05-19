@@ -3,6 +3,8 @@
   export let link;
   export let project2;
   export let link2;
+  export let href;
+  export let href2;
 
   // @ts-ignore
 const isVideo = (url) => {
@@ -10,9 +12,9 @@ const isVideo = (url) => {
 };
 </script>
 
-<section id="projects" class="flex">
+<section id="projects" class="flex two-col">
   <div>
-    <a href="{project}">
+    <a href={href}>
       {#if isVideo(link)}
       <video src="{link}" autoplay muted loop></video>
       {:else}
@@ -23,7 +25,7 @@ const isVideo = (url) => {
   </div>
 
   <div>
-    <a href="{project2}">
+    <a href={href2}>
       {#if isVideo(link2)}
       <video src="{link2}" autoplay muted loop></video>
        {:else}

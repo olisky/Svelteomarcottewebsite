@@ -1,8 +1,10 @@
-import adapter from "@sveltejs/adapter-netlify";
+import adapterNetlify from "@sveltejs/adapter-netlify";
+import adapterAuto from "@sveltejs/adapter-auto";
+
+const isProd = process.env.NODE_ENV === "production";
 
 export default {
   kit: {
-    adapter: adapter(),
-    // other options if you have any
+    adapter: isProd ? adapterNetlify() : adapterAuto(),
   },
 };

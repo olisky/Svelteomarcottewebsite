@@ -47,5 +47,6 @@
 <style>
   #about.flex2 h2 {
   color: var(--coloraccent);
+   align-content: center;
 }
 </style>

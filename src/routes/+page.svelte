@@ -8,22 +8,25 @@
     </script>
 
     <Header />
-    <SectionFullWidthPortfolio project="Block
-    Bash"
+    <SectionFullWidthPortfolio project="block bash"
     link="media/bb.jpg"
+    href="/blockbash"
     />
     <Section22FullWidthPortfolio 
     project="Avro Gaming"
     link="media/avrogaming_intro.mp4"
+    href="/avrogaming"
 
     project2="High Voltage"
     link2="media/highvoltage_intro.mp4"
+    href2="/highvoltage"
     />
 
     <SectionFullWidthPortfolio 
     project="Kinova"
     link="media/NewPrzingAd.mp4"
-    />
+    href="" 
+/>
     
     <Section4RowDescription 
     heading1= "Company"
