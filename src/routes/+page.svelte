@@ -8,7 +8,8 @@
     </script>
 
     <Header />
-    <SectionFullWidthPortfolio project="block bash"
+    <SectionFullWidthPortfolio id="work"
+    project="block bash"
     link="media/bb.jpg"
     href="/blockbash"
     />
@@ -23,32 +24,68 @@
     />
 
     <SectionFullWidthPortfolio 
-    project="Kinova"
-    link="media/NewPrzingAd.mp4"
-    href="" 
+    project="Academy Of Football"
+    link="img/AOF_Thumb.jpg"
+    href="/AOF" 
 />
     
-    <Section4RowDescription 
+    <Section4RowDescription id="about"
     heading1= "Company"
     symbol1= "-"
     content1= "Looking for work"
+
     heading2= "Name"
     symbol2= "-"
     content2= "Olivier Marcotte"
+
+
     heading3= "Skills"
     symbol3= "-"
-    content3= "IT Technician
-    Motion Design
-    VFX - CGI
-    Animation
-    Website"
-    heading4= "Connect"
+    listStyle="default"
+    content3={[
+    
+  {
+    title: "IT Support & Administration",
+    items: [
+      "User support & troubleshooting",
+      "Windows workstation deployment",
+      "Network diagnostics (VPN, DNS)",
+      "Active Directory & Microsoft 365",
+      "Incident documentation & follow-up"
+    ]
+  },
+  {
+    title: "Multimedia Development",
+    items: [
+      "Graphic Design (Figma, Photoshop, Illustrator)📷",
+      "Motion Design (After effects, UE5, 3DS Max, Blender)🦅", 
+      "Video Editing (Davinci, Premiere)🎞️",
+      "Gaming (Unreal Engine)🎮",
+      
+    ]
+  },
+  {
+    title: "Web",
+    items: [
+      "Website Building (Wordpress, Svelte, VSC)🪐",
+      "HTML/CSS Basics💻"
+    ]
+  }
+]}
+
+
+    heading4= "About me"
     symbol4= "-"
-    content4= "Linkedin
-    Email"
+    content4= "
+    Professional
+    Self-Learning
+    Team player 
+    Funny &#128514;
+    "
     />
 
     <SectionCallToAction 
+    id="contact"
     heading="Seeking IT and Multimedia Expertise?"
     buttontext="Get In Touch!"
     url="https://www.linkedin.com/in/oliviermarcotte/"

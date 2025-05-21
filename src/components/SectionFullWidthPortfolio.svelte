@@ -2,6 +2,7 @@
     export let project;
     export let link;
     export let href; // New prop for the URL
+    export let id = ''; // Add a default empty string
 
       // Simple function to detect if link is a video (check extension)
   const isVideo = () => {
@@ -9,7 +10,7 @@
   };
 </script>
 
-<section>
+<section {id}>
   <div>
       <a href={href}>
       {#if isVideo()}

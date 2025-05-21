@@ -1,5 +1,7 @@
  <script>
+  
   import { onMount } from 'svelte';
+  
   let hamOpen = false;
   let isTransparent = false;
   let isHidden = false;
@@ -41,9 +43,9 @@
   <img src="/img/ham-open.svg" alt="Menu" class="ham" on:click={toggleMenu} />
 
   <nav class:show={hamOpen}>
-    <a href="#projects" on:click={closeMenu}>WORK</a>
-    <a href="#about" on:click={closeMenu}>ABOUT</a>
-    <a href="#contact" on:click={closeMenu}>CONTACT</a>
+    <a href="/#work" on:click={closeMenu}>WORK</a>
+    <a href="/#about" on:click={closeMenu}>ABOUT</a>
+    <a href="/#contact" on:click={closeMenu}>CONTACT</a>
   </nav>
 </header>
 
@@ -55,7 +57,7 @@ header {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: 40px 100px;
+  padding: 100px 100px;
 
 }
 

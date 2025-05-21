@@ -12,7 +12,7 @@ const isVideo = (url) => {
 };
 </script>
 
-<section id="projects" class="flex two-col">
+<section class="flex two-col">
   <div>
     <a href={href}>
       {#if isVideo(link)}

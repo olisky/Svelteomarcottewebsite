@@ -5,9 +5,10 @@
     export let icon;
     export let url2;
     export let icon2;
+    export let id = ''; // Add a default empty string
 
     </script>
-<section id="contact" class="flex3">
+<section {id} class="flex3">
     <div>
       <h1>{heading}</h1>
       <a href="https://www.linkedin.com/in/oliviermarcotte/" class="button"
