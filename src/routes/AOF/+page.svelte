@@ -19,6 +19,6 @@ content3={[
   content4="I was responsible for creating the promotional video for Academy of Football in Buffalo Wild Wings restaurant for the company Buzztime, user were able to engage and respond to Quizz at their favorite restaurant and win prizes!"
 
   
-  project="blockbash"
+  project="Academy of Football"
   link="media/AOF_Video1.mp4"
 />
