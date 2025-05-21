@@ -86,7 +86,7 @@
 
     <SectionCallToAction 
     id="contact"
-    heading="Seeking IT and Multimedia Expertise?"
+    heading="Seeking IT or Multimedia Expertise?"
     buttontext="Get In Touch!"
     url="https://www.linkedin.com/in/oliviermarcotte/"
     icon="fa fa-linkedin"
